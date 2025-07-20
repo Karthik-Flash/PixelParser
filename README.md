@@ -10,14 +10,15 @@ This project demonstrates how to generate and save grayscale and RGB images usin
 ### PGM (Portable Gray Map)
 A horizontal grayscale gradient (black to white) is created and stored using the ASCII-based `.pgm` format.
 
-- **C Code:** `grayscale_pgm.c`
+- [C Code: grayscale_pgm.c](./grayscale_pgm.c)
+
 - **Image Format:** PGM (P2)
 - **Resolution:** 100 x 100
 
 ### BMP Conversion
 The same grayscale gradient is converted into **BMP** format with a grayscale color palette.
 
-- **C Code:** `grayscale_to_bmp.c`
+- [C Code: `grayscale_to_bmp.c`](./grayscale_to_bmp.c)
 - **Image Format:** BMP (8-bit grayscale)
 
 > ✅ Output generated: `image.pgm` and `image_1000x1000.bmp`  
@@ -31,7 +32,7 @@ The same grayscale gradient is converted into **BMP** format with a grayscale co
 ### PPM (Portable Pixel Map)
 Creates a 10x10 RGB image with a red gradient, constant green, and constant blue. Saved in ASCII `.ppm` format.
 
-- **C Code:** `rgb_gradient_ppm.c`
+- [C Code: `rgb_gradient_ppm.c`](./rgb_gradient_ppm.c)
 - **Image Format:** PPM (P3)
 - **Resolution:** 10 x 10
 
@@ -39,7 +40,7 @@ Creates a 10x10 RGB image with a red gradient, constant green, and constant blue
 ### BMP Conversion
 Generates a 1000x1000 RGB image with a red gradient and constant green/blue. Saved as `.bmp`.
 
-- **C Code:** `rgb_gradient_to_bmp.c`
+- [C Code: `rgb_gradient_to_bmp.c`](./rgb_gradient_to_bmp.c)
 - **Image Format:** BMP (24-bit RGB)
 
 > 📸 **Preview of RGB Gradient (`rgb_image.bmp`)**  
@@ -53,7 +54,8 @@ Generates a 1000x1000 RGB image with a red gradient and constant green/blue. Sav
 
 The **Flash logo** is manually drawn using a `20x20` matrix. Yellow represents the lightning bolt, and black is the background(not accurate).
 
-- **C Code:** `flash_logo_ppm.c`, `flash_logo_bmp.c`
+- [C Code: `flash_logo_ppm.c`](./flash_logo_ppm.c)
+- [C Code: `flash_logo_bmp.c`](./flash_logo_bmp.c)
 - **Image Formats:** PPM (P3), BMP (24-bit RGB)
 - **Resolution:** 20 x 20
 
@@ -69,7 +71,7 @@ The **Flash logo** is manually drawn using a `20x20` matrix. Yellow represents t
 A stylized Minecraft sword using a `12x10` matrix with indexed colors:
 - **Cyan**, **Turquoise**, and **Brown** are used to depict the blade and handle.
 
-- **C Code:** `minecraft_sword_bmp.c`
+- [C Code: `minecraft_sword_bmp.c`](./minecraft_sword_bmp.c)
 - **Image Format:** BMP (24-bit RGB)
 - **Resolution:** 12 x 10
 
@@ -84,19 +86,20 @@ A stylized Minecraft sword using a `12x10` matrix with indexed colors:
 
 ### a) BMP ➡️ PPM
 Convert a `.bmp` file (grayscale or RGB) into a `.ppm` file.
--- **C Script:** `convert_image_formats_BPM_PPM.c`
+- [C Code: `convert_image_formats_BMP_PPM.c`](./convert_image_formats_BMP_PPM.c)
 #### example:
-(i) BPM file -> `input.bpm`
+(i) BPM file -> [input.bpm](./otherfiles/input.bpm)  
 <img width="860" height="981" alt="image" src="https://github.com/user-attachments/assets/33c90866-05a6-4dc3-af20-99a8ac5c545d" />
 
-(ii) PPM file -> `output.ppm`
+(ii) PPM file -> [output.ppm](./otherfiles/output.ppm)
 <img width="1697" height="825" alt="image" src="https://github.com/user-attachments/assets/d6102167-7d63-4020-9aa2-a66d30c1e8d0" />
 
 ### b) PPM ➡️ PNG
 Convert a `.ppm` file into a `.png` using Python libraries like `Pillow`.
 
-- **Python Script:** `convert_image_formats_PPM_PNG.py`
+- [Python Script: `convert_image_formats_PPM_PNG.py`](./convert_image_formats_PPM_PNG.py)
 #### example:
 (i) PPM same as above.
-(ii) PNG -> `output.png`
+(ii) PNG -> [output.png](./otherfiles/output.png)
+
 <img width="860" height="981" alt="image" src="https://github.com/user-attachments/assets/543045c5-f5e1-437c-b587-74837c08ce48" />
