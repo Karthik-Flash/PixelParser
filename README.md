@@ -89,10 +89,10 @@ Convert a `.bmp` file (grayscale or RGB) into a `.ppm` file.
 - [C Code: `convert_image_formats_BMP_PPM.c`](./convert_image_formats_BMP_PPM.c)
 #### example:
 (i) BPM file -> [input.bpm](./otherfiles/input.bpm)  
-<img width="860" height="981" alt="image" src="https://github.com/user-attachments/assets/33c90866-05a6-4dc3-af20-99a8ac5c545d" />
+<img alt="image" src="https://github.com/user-attachments/assets/33c90866-05a6-4dc3-af20-99a8ac5c545d" width ="300"/>
 
 (ii) PPM file -> [output.ppm](./otherfiles/output.ppm)
-<img width="1697" height="825" alt="image" src="https://github.com/user-attachments/assets/d6102167-7d63-4020-9aa2-a66d30c1e8d0" />
+<img alt="image" src="https://github.com/user-attachments/assets/d6102167-7d63-4020-9aa2-a66d30c1e8d0" width ="300"/>
 
 ### b) PPM ➡️ PNG
 Convert a `.ppm` file into a `.png` using Python libraries like `Pillow`.
@@ -102,4 +102,25 @@ Convert a `.ppm` file into a `.png` using Python libraries like `Pillow`.
 (i) PPM same as above.
 (ii) PNG -> [output.png](./otherfiles/output.png)
 
-<img width="860" height="981" alt="image" src="https://github.com/user-attachments/assets/543045c5-f5e1-437c-b587-74837c08ce48" />
+<img src="https://github.com/user-attachments/assets/543045c5-f5e1-437c-b587-74837c08ce48" width="300" />
+
+
+---
+## IN A NUTSHELL
+## 📌 Project Purpose & Applications
+
+This project was built to explore **low-level image file formats** and how image data is represented, manipulated, and transformed **at the pixel level using C**, without relying on image-processing libraries.
+
+### 🔧 Key Concepts Demonstrated:
+- Raw handling of binary and ASCII image formats: `.pgm`, `.ppm`, `.bmp`
+- Color representation (RGB vs grayscale) and memory layout in bitmap images
+- Image generation using hardcoded matrices (useful for icon generation or embedded displays)
+- Format conversion logic between BMP → PPM → PNG using C and Python
+
+### 🧠 Applications:
+- **Embedded systems**: Rendering and manipulating icons/images on low-resource hardware
+- **VLSI and hardware design**: Preprocessing or visualizing pixel arrays in image sensors and display controllers
+- **Computer Architecture**: Understanding how data structures (arrays, pointers) map to real-world visual output
+- **IoT or FPGA prototyping**: Useful for testing image displays in environments without full OS or graphics libraries
+
+---
